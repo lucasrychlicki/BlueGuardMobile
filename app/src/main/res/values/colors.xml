@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#16DCF6</color>
+    <color name="red">#FF0000</color>
+    <color name="primaria">#769CDF</color>
+    <color name="secundaria">#8991A2</color>
+    <color name="terciaria">#A288A6</color>
+    <color name="error">#FF5449</color>
+    <color name="neutro">#919093</color>
+    <color name="neutro_variante">#8E9098</color>
+    <color name="cinzaClaro">#CDE5ED</color>
+
+
+
+</resources>

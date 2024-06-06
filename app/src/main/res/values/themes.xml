@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BlueGuard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaria</item>
+        <item name="colorSecondary">@color/secundaria</item>
+        <item name="colorTertiary">@color/terciaria</item>
+        <item name="android:statusBarColor">@color/primaria</item>
+
+    </style>
+
+    <style name="Theme.BlueGuard" parent="Base.Theme.BlueGuard" />
+</resources>
