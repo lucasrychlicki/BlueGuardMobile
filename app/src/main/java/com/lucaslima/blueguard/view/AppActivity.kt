@@ -8,17 +8,19 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.lucaslima.blueguard.R
+import com.lucaslima.blueguard.databinding.ActivityAppBinding
 
 class AppActivity : AppCompatActivity() {
 
-    private lateinit var fabMenu: FloatingActionButton
+    private lateinit var binding: ActivityAppBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app)
 
-        fabMenu = findViewById(R.id.fabMenu)
+        binding = ActivityAppBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        fabMenu.setOnClickListener {
+        binding.fabMenu.setOnClickListener {
             val i = Intent(this,MenuActivity::class.java)
             startActivity(i)
         }

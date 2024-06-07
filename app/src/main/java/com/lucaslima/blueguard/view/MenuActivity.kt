@@ -15,21 +15,30 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMenuBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_menu)
+        setContentView(binding.root)
 
         binding.textViewSobre.setOnClickListener {
             val i = Intent(this, AppActivity::class.java)
             startActivity(i)
+            finish()
         }
 
         binding.textViewRelatorio.setOnClickListener {
             val i = Intent(this, RelatorioActivity::class.java)
             startActivity(i)
+            finish()
         }
 
         binding.textViewUser.setOnClickListener {
             val i = Intent(this, UserActivity::class.java)
             startActivity(i)
+            finish()
+        }
+
+        binding.textViewRelatar.setOnClickListener {
+            val i = Intent(this, RelatarActivity::class.java)
+            startActivity(i)
+            finish()
         }
 
     }

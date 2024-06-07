@@ -6,26 +6,24 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.lucaslima.blueguard.R
+import com.lucaslima.blueguard.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var btnLogin: Button
-    private lateinit var btnCadastro: Button
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
 
-        btnLogin = findViewById(R.id.btnLogin)
-        btnCadastro = findViewById(R.id.btnCadastro)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnLogin.setOnClickListener {
+        binding.btnLogin.setOnClickListener {
             val i = Intent(this, LoginActivity::class.java)
             startActivity(i)
         }
 
-        btnCadastro.setOnClickListener {
+        binding.btnCadastro.setOnClickListener {
             val i = Intent(this, CadastroActivity::class.java)
             startActivity(i)
         }

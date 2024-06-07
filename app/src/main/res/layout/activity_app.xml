@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.AppActivity">
+    tools:context=".view.AppActivity"
+    android:background="@drawable/background_gradiente">
 
     <TextView
         android:id="@+id/textView"
@@ -30,6 +31,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/image_menu" />
+        app:srcCompat="@drawable/image_user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

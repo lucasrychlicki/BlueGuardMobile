@@ -7,13 +7,45 @@
     android:background="@drawable/background_gradiente"
     tools:context=".view.MenuActivity">
 
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="BlueGuard"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitulo" />
+
+
     <TextView
         android:id="@+id/textViewRelatorio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="80dp"
         android:drawableLeft="@drawable/image_dashboard"
+        android:drawablePadding="10dp"
         android:fontFamily="@font/domine_bold"
         android:text="Relatórios"
         android:textColor="@color/white"
@@ -21,7 +53,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textMenu" />
+
+    <TextView
+        android:id="@+id/textViewRelatar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/imagem_reportar"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/domine_bold"
+        android:text="Reportar"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRelatorio" />
 
     <TextView
         android:id="@+id/textViewUser"
@@ -30,13 +78,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/image_user"
+        android:drawablePadding="10dp"
         android:fontFamily="@font/domine_bold"
         android:text="Usuário"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRelatorio" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRelatar" />
 
     <TextView
         android:id="@+id/textViewSobre"
@@ -49,6 +98,7 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         android:drawableLeft="@drawable/image_descricao"
+        android:drawablePadding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewUser" />
