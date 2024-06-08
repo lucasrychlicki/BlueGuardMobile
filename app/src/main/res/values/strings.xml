@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BlueGuard</string>
+    <string name="descricao_projeto">BlueGuard é um aplicativo que permite aos usuários monitorar e reportar a condição das praias, bem como registrar observações de vida marinha. A plataforma incentivará a ciência cidadã, promovendo a participação ativa do público na conservação marinha.</string>
+    <string name="descricao_funcionalidade">
+    Relatórios de Condição da Praia: Usuários podem enviar relatórios sobre a limpeza da praia, qualidade da água, presença de resíduos, e condições gerais.\n
+    Mapas Interativos: Visualização de dados de monitoramento em mapas interativos, mostrando a condição atual das praias.\n
+    Alertas e Notificações: Notificações sobre condições adversas ou emergências, como derramamentos de óleo ou alta concentração de resíduos.</string>
+
+    <string name="descricao_observacao">
+        Registro de Observações: Usuários podem registrar avistamentos de vida marinha, incluindo fotos, localização e descrições.\n
+    Identificação de Espécies: Utilização de IA para identificar espécies marinhas a partir das fotos enviadas pelos usuários.\n
+    Contribuição para Pesquisa: Dados de observações são compartilhados com cientistas e pesquisadores para apoiar estudos sobre biodiversidade marinha.
+    </string>
+
 </resources>
